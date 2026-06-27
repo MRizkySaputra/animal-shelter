@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    <title>Animal Shelter - Pets</title>
+    <link rel="icon" href="assets/image/paws.png">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="/index.html" class="nav__logo">
+                <img src="assets/image/paws.png" alt="Paws" width="40" height="40">
+                Animal Shelter
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="/index.html" class="nav__link">Home</a></li>
+                    <li><a href="/pets.html" class="nav__link">Pets</a></li>
+                    <li><a href="/about.html" class="nav__link">About</a></li>
+                    <li><a href="#contact" class="nav__link nav__button">Contact</a></li>
+                </ul>
+
+                <button class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </button>
+            </div>
+            <button class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section Pets -->
+        <section class="home pets">
+            <div class="home__container container"> 
+                <div class="data">
+                    <h1 class="title">Ready to Lose Your Couch Space?</h1>
+                    <p class="description">
+                        Meet our VIP residents who are looking for a permanent place to freeload. 
+                        Watch out, looking into their eyes for too long will make you catch feelings out of nowhere.
+                    </p>
+                </div>
+                <div class="pets__img">
+                    <img src="assets/image/pets.png" alt="Pets">
+                    <div class="pets__shadow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs Section -->
+        <section class="container-pets container">
+            <div class="tab__header">
+                <h2 class="tab__btn active-tab" data-target="#bark">Tim Bark</h2>
+                <h2 class="tab__btn" data-target="#meow">Tim Meow</h2>
+            </div>
+
+            <!-- Isi Tabs -->
+            <div class="tab__content">
+                
+                <!-- Kategori: TIM BARK (Anjing) -->
+                <div class="tab__pane active-tab" id="bark">
+                    <div class="card-container">
+                        <article class="card-article">
+                            <img src="assets/image/card-shiba-inu.png" alt="" class="card-img">
+                            <div class="card-data">
+                                <span class="card-description">Tim Bark</span>
+                                <h2 class="card-title"><b>Shiba Inu</b></h2>
+                                <a href="#" class="card-button">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="card-article">
+                            <img src="assets/image/card-corgi-sable.png" alt="" class="card-img">
+                            <div class="card-data">
+                                <span class="card-description">Tim Bark</span>
+                                <h2 class="card-title"><b>Corgi Sable</b></h2>
+                                <a href="#" class="card-button">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Kategori: TIM MEOW (Kucing) -->
+                <div class="tab__pane" id="meow">
+                    <div class="card-container">
+                        <article class="card-article">
+                            <img src="assets/image/british-shorthair.png" alt="" class="card-img">
+                            <div class="card-data">
+                                <span class="card-description">Tim Meow</span>
+                                <h2 class="card-title"><b>British Shorthair</b></h2>
+                                <a href="#" class="card-button">Read More</a>
+                            </div>
+                        </article>
+                        <!-- Tambahkan kucing lain di sini nanti -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="home_footer">
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
